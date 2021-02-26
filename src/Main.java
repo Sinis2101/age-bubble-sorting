@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 
 public class Main {
@@ -20,7 +21,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        format = new DecimalFormat("#.##");
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
+        symbols.setDecimalSeparator('.');
+        format = new DecimalFormat("#.##", symbols);
 
         doublesArray = new ArrayList<>();
         countList = new ArrayList<>();
