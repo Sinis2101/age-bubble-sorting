@@ -144,8 +144,8 @@ public class Main {
 
     // OPERATIONS
 
-    private static double getAverage(int changes, int steps) {
-        return (double) changes / steps;
+    private static double getAverage(int mods, int steps) {
+        return (double) mods / steps;
     }
 
 }
